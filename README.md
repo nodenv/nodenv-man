@@ -1,68 +1,64 @@
-rbenv-man
+nodenv-man
 =========
 
-rbenv-man is a plugin for [rbenv] to easily access the man pages for the
-currently set Ruby version, e.g. `ruby(1)` and `irb(1)`.
+nodenv-man is a plugin for [nodenv] to easily access the man pages for the
+currently set node version, e.g. `node(1)` and `npm(1)`.
 
-Technically, rbenv-man is a wrapper for `man(1)` that takes care of using the
+Technically, nodenv-man is a wrapper for `man(1)` that takes care of using the
 correct manpath.
-
-Note: To view a gem's man page, install [gem-man].
-
 
 Installation
 ------------
 
-To install rbenv-man, clone this repository into your `~/.rbenv/plugins`
-directory. (You'll need a recent version of rbenv that supports plugin
-bundles.)
+To install nodenv-man, clone this repository into your `$(nodenv root)/plugins`
+directory.
 
-    $ mkdir -p "$(rbenv root)/plugins"
-    $ git clone https://github.com/mlafeldt/rbenv-man.git "$(rbenv root)/plugins/rbenv-man"
+    $ mkdir -p "$(nodenv root)/plugins"
+    $ git clone https://github.com/nodenv/nodenv-man.git "$(nodenv root)/plugins/nodenv-man"
 
 
 Usage
 -----
 
-Simply use rbenv-man in the same way as your system's `man(1)` program. All
+Simply use nodenv-man in the same way as your system's `man(1)` program. All
 command-line options are passed through to it.
 
 Some examples:
 
-* Show `ruby(1)` manual:
+* Show `node(1)` manual:
 
-        $ rbenv man ruby
+        $ nodenv man node
 
-* Show `ri(1)` manual:
+* Show `npm(1)` manual:
 
-        $ rbenv man 1 ri
+        $ nodenv man 1 npm
 
-* Print location of `ruby(1)` manual:
+* Print location of `node(1)` manual:
 
-        $ rbenv man -w ruby
-        /home/mlafeldt/.rbenv/versions/1.9.2-p290/share/man/man1/ruby.1
+        $ nodenv man -w node
+        /home/mlafeldt/.nodenv/versions/1.9.2-p290/share/man/man1/node.1
 
-* Change Ruby version and print new location of man page:
+* Change node version and print new location of man page:
 
-        $ rbenv global 1.9.3-p0
-        $ rbenv man -w ruby
-        /home/mlafeldt/.rbenv/versions/1.9.3-p0/share/man/man1/ruby.1
+        $ nodenv global 1.9.3-p0
+        $ nodenv man -w node
+        /home/mlafeldt/.nodenv/versions/1.9.3-p0/share/man/man1/node.1
 
 
 License
 -------
 
-rbenv-man does not reach the [threshold of originality], so no license is needed.
+nodenv-man does not reach the [threshold of originality], so no license is needed.
 
 
 Contact
 -------
 
-* Web: <https://github.com/mlafeldt/rbenv-man>
+* Web: <https://github.com/mlafeldt/nodenv-man>
 * Mail: <mathias.lafeldt@gmail.com>
 * Twitter: [@mlafeldt](https://twitter.com/mlafeldt)
 
 
 [gem-man]: https://github.com/defunkt/gem-man
-[rbenv]: https://github.com/sstephenson/rbenv
+[nodenv]: https://github.com/sstephenson/nodenv
 [threshold of originality]: http://en.wikipedia.org/wiki/Threshold_of_originality

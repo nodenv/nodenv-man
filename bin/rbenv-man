@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-set -e
-[ -n "$RBENV_DEBUG" ] && set -x
-
-exec man -M "$(rbenv-prefix)/share/man:${MANPATH}" "$@"
