@@ -45,20 +45,4 @@ Some examples:
         /home/mlafeldt/.nodenv/versions/1.9.3-p0/share/man/man1/node.1
 
 
-License
--------
-
-nodenv-man does not reach the [threshold of originality], so no license is needed.
-
-
-Contact
--------
-
-* Web: <https://github.com/mlafeldt/nodenv-man>
-* Mail: <mathias.lafeldt@gmail.com>
-* Twitter: [@mlafeldt](https://twitter.com/mlafeldt)
-
-
-[gem-man]: https://github.com/defunkt/gem-man
-[nodenv]: https://github.com/sstephenson/nodenv
-[threshold of originality]: http://en.wikipedia.org/wiki/Threshold_of_originality
+[nodenv]: https://github.com/nodenv/nodenv
