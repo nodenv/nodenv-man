@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e
+[ -n "$NODENV_DEBUG" ] && set -x
+
+exec man -M "$(nodenv-prefix)/share/man:${MANPATH}" "$@"
