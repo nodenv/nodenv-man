@@ -16,7 +16,6 @@ directory.
     $ mkdir -p "$(nodenv root)/plugins"
     $ git clone https://github.com/nodenv/nodenv-man.git "$(nodenv root)/plugins/nodenv-man"
 
-
 Usage
 -----
 
@@ -36,13 +35,12 @@ Some examples:
 * Print location of `node(1)` manual:
 
         $ nodenv man -w node
-        /home/mlafeldt/.nodenv/versions/1.9.2-p290/share/man/man1/node.1
+        /usr/local/var/nodenv/versions/4.2.1/share/man/man1/node.1
 
 * Change node version and print new location of man page:
 
-        $ nodenv global 1.9.3-p0
-        $ nodenv man -w node
-        /home/mlafeldt/.nodenv/versions/1.9.3-p0/share/man/man1/node.1
+        $ NODENV_VERSION=5.0.0 nodenv man -w node
+        /usr/local/var/nodenv/versions/5.0.0/share/man/man1/node.1
 
 
 [nodenv]: https://github.com/nodenv/nodenv
