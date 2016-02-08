@@ -1,0 +1,16 @@
+{
+  "name": "nodenv-man",
+  "version": "1.0.0",
+  "homepage": "https://github.com/nodenv/nodenv-man#readme",
+  "author": "Jason Karns <jason@karns.name> (http://jason.karns.name/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodenv/nodenv-man.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodenv/nodenv-man/issues"
+  },
+  "scripts": {
+  }
+}
