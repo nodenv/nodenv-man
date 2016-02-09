@@ -2,4 +2,6 @@
 set -e
 [ -n "$NODENV_DEBUG" ] && set -x
 
-exec man -M "$(nodenv-prefix)/share/man:${MANPATH}" "$@"
+manpath="$(nodenv-prefix)/share/man:${MANPATH}"
+
+MANPATH="${manpath%:}" exec man "$@"
