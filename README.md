@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/nodenv/nodenv-man.svg?branch=master)](https://travis-ci.org/nodenv/nodenv-man)
 
-# nodenv-man
+# Man pages for nodenv Node versions
 
 nodenv-man is a plugin for [nodenv] to easily access the man pages for the
 currently set node version, e.g. `node(1)` and `npm(1)`.
