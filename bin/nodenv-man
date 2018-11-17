@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
+
 set -e
+
 [ -n "$NODENV_DEBUG" ] && set -x
 
-manpath="$(nodenv-prefix)/share/man:${MANPATH}"
+manpath_with_nodenv="$(nodenv-prefix)/share/man:${MANPATH}"
 
-MANPATH="${manpath%:}" exec man "$@"
+MANPATH="${manpath_with_nodenv%:}" exec man "$@"
