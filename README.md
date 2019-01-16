@@ -10,6 +10,11 @@ correct manpath.
 
 <!-- toc -->
 
+- [Installation](#installation)
+- [Usage](#usage)
+
+<!-- tocstop -->
+
 ## Installation
 
 To install nodenv-man, clone this repository into your `$(nodenv root)/plugins`
