@@ -1,8 +1,12 @@
 {
   "name": "@nodenv/nodenv-man",
   "version": "1.1.0",
+  "description": "View man pages for currently active node version",
   "homepage": "https://github.com/nodenv/nodenv-man#readme",
   "license": "MIT",
+  "contributors": [
+    "Jason Karns <jason.karns@gmail.com> (http://jasonkarns.com)"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodenv/nodenv-man.git"
@@ -21,17 +25,14 @@
     "start": "bin/nodenv-man",
     "test": "bats ${CI:+--tap} test",
     "posttest": "npm run lint",
-    "lint": "git ls-files bin **/*.*sh | xargs shellcheck",
-    "postversion": "npm publish",
-    "prepublishOnly": "npm run publish:github && npm run publish:brew",
-    "publish:brew": "brew-publish",
-    "publish:github": "git push --follow-tags"
+    "lint": "git ls-files bin etc script */*.*sh | xargs shellcheck",
+    "postversion": "git push --follow-tags"
   },
   "devDependencies": {
     "bats": "^1.12.0",
-    "bats-assert": "jasonkarns/bats-assert-1",
+    "bats-assert": "^2.2.0",
     "bats-mock": "^1.2.5",
-    "bats-support": "jasonkarns/bats-support",
-    "brew-publish": "^2.3.1"
+    "bats-support": "^0.3.0",
+    "shellcheck": "^4.1.0"
   }
 }

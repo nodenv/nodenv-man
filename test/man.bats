@@ -4,7 +4,7 @@ load test_helper
 
 @test "prepends current node prefix to MANPATH" {
   stub nodenv-prefix 'echo 123'
-  stub man 'npm : echo $MANPATH'
+  stub man "npm : echo \$MANPATH"
 
   MANPATH=original_manpath run nodenv-man npm
 
