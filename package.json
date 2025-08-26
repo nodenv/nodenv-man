@@ -25,11 +25,8 @@
     "start": "bin/nodenv-man",
     "test": "bats ${CI:+--tap} test",
     "posttest": "npm run lint",
-    "lint": "git ls-files bin **/*.*sh | xargs shellcheck",
-    "postversion": "npm publish",
-    "prepublishOnly": "npm run publish:github && npm run publish:brew",
-    "publish:brew": "brew-publish",
-    "publish:github": "git push --follow-tags"
+    "lint": "git ls-files bin etc script */*.*sh | xargs shellcheck",
+    "postversion": "git push --follow-tags"
   },
   "devDependencies": {
     "bats": "^1.12.0",
