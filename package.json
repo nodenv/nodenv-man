@@ -32,6 +32,7 @@
     "bats": "^1.12.0",
     "bats-assert": "github:jasonkarns/bats-assert-1",
     "bats-mock": "^1.2.5",
-    "bats-support": "github:jasonkarns/bats-support"
+    "bats-support": "github:jasonkarns/bats-support",
+    "shellcheck": "^4.1.0"
   }
 }
