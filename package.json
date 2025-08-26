@@ -29,9 +29,9 @@
   },
   "devDependencies": {
     "bats": "^1.12.0",
-    "bats-assert": "jasonkarns/bats-assert-1",
+    "bats-assert": "github:jasonkarns/bats-assert-1",
     "bats-mock": "^1.2.5",
-    "bats-support": "jasonkarns/bats-support",
+    "bats-support": "github:jasonkarns/bats-support",
     "brew-publish": "^2.3.1"
   }
 }
