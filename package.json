@@ -1,7 +1,7 @@
 {
   "name": "@nodenv/nodenv-man",
   "version": "1.1.0",
-  "description": "View man pages for currently active node version",
+  "description": "A nodenv plugin to view man pages for the currently active Node.",
   "homepage": "https://github.com/nodenv/nodenv-man#readme",
   "license": "MIT",
   "contributors": [
