@@ -29,10 +29,10 @@
     "postversion": "git push --follow-tags"
   },
   "devDependencies": {
-    "bats": "^1.13.0",
-    "bats-assert": "^2.2.4",
-    "bats-mock": "^1.2.5",
+    "bats": "1",
+    "bats-assert": "2",
+    "bats-mock": "1",
     "bats-support": "^0.3.0",
-    "shellcheck": "^4.1.0"
+    "shellcheck": "4"
   }
 }
